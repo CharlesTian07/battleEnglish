@@ -1,0 +1,26 @@
+<view class="container">
+  <view class='mineInfo'>
+    <image class='mineInfoImg' src='../image/mineInfo.png'></image>
+    <text class='mineInfoText'>个人信息</text>
+  </view>
+
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </view>
+    <view class='winningRate'>胜率：{{winningRate}}%</view> 
+  </view>
+
+  <view class='answerRecord' bindtap='answerRecord'>
+    <image class='answerRecordImg' src='../image/answerRecord.png'></image>
+    <text class='answerRecordText'>答题记录</text>
+    <image class='directionImage' src='../image/arrow.png'></image>
+  </view>
+
+  <view class='challengeRecord' bindtap='challengeRecord'>
+    <image class='challengeRecordImg' src='../image/challengeRecord.png'></image>
+    <text class='challengeRecordText'>挑战记录</text>
+    <image class='directionImage' src='../image/arrow.png'></image>
+  </view>
+</view>

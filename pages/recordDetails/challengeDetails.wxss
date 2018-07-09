@@ -1,0 +1,96 @@
+.container{
+  width: 100%;
+}
+
+.answerReocrdList{
+  width: 90%;
+  padding: 2% 5%;
+  margin: 10rpx 0;
+  border: 1rpx solid black; 
+  /* border-right: none;
+  border-left: none; */
+  border-radius: 20rpx;
+  background: rgba(238,153,34,0.1); 
+  position: relative;
+}
+
+.userinfo{
+  background: none;
+  border: none;
+}
+
+.idiom{
+  font-weight: bold;
+}
+
+.idiomAndEnTitle{
+  width: 90%;
+  margin: 40rpx;
+  text-align: center;
+  padding: 5% 5%;
+  background: rgba(238,153,34,1);
+  color: white;
+  border-radius: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scoreDetails{
+  text-align: left;
+  padding: 1% 0;
+  line-height: 30px; 
+}
+
+.recordDate,.totalScore{
+  width: 50%;
+  float: left;
+}
+
+.recordDate{
+  /* width: 60%; */
+  text-align: left;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.totalScore{
+  /* width: 40%; */
+  text-align: right;
+}
+
+.userAudioImg{
+  width: 30px;
+  height: 30px;
+  margin-left: 50rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.inviteChallenge{
+  position: absolute;
+  right: 0rpx;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.inviteChallengeBtn{
+  color: blue;
+  background: none;
+}
+
+.inviteChallengeBtn::after{
+  border: none;
+}
+
+.challengeResultText{
+  color: red; 
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  font-weight: bold;
+}
+
+.challengeResultTextColor{
+  color: rgb(169,169,169);
+}

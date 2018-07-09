@@ -1,0 +1,87 @@
+page {
+  background:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.studyItem,.EnIdioms,.textInfo,.imageInfo,.userAnswer{
+  width: 90%;
+  padding: 0 5%;
+}
+
+/* .studyItem{
+  height: 80rpx;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+} */
+
+.EnIdioms{
+  text-align: center;
+  color: white;
+  margin: 80rpx 0 30rpx 0; 
+  padding: 40rpx 0;
+  border-radius: 10rpx; 
+  font-size: 40rpx;
+  background: rgba(255,160,4,1);
+}
+
+.countDown{
+  font-size: 35rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 60rpx;
+  color: red;
+}
+
+.firstHint,.secondHint{
+  color: #666;
+  font-size: 30rpx;
+}
+
+.hintcontent {
+  text-align: center;
+  font-size: 38rpx;
+  margin-top: 40rpx;
+}
+
+.imageInfo{
+  margin-top: 30rpx;
+}
+
+.relativeImageView{
+  text-align: center;
+  background-color: #000;  
+  margin: 15rpx 0;
+}
+
+.imageInfo image{
+  width: 420rpx;
+  height: 300rpx; 
+  display: block; 
+  margin:0 auto; 
+}
+
+.userAnswer{
+  margin-top: 95rpx;
+}
+
+/* .userAnswerTitle,.userAnswerContent{
+  display: inline-block;
+  vertical-align: top;
+} */
+
+.userAnswerContent{
+  width: 100%;
+  border-bottom: 2rpx solid #000;
+}
+
+.submit{
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 50rpx;
+}
+
+.submitBtn{
+  color: white;
+}

@@ -1,0 +1,30 @@
+{
+  "pages":[
+     
+    "pages/index/index",
+    "pages/personalInfo/personalInfo",
+    "pages/sendGifts/sendGifts",
+    "pages/personalInfo/answerRecord",   
+    "pages/singleTraining/singleTraining",
+    "pages/singleTraining/result",   
+    "pages/tips/feedback",
+    "pages/tips/tips",
+    "pages/recharge/recharge",       
+    "pages/personalInfo/challengeRecord",
+    "pages/recordDetails/answerDetails",
+    "pages/recordDetails/challengeDetails",
+    "pages/teamReplies/teamReplies",
+    "pages/randomMatch/randomMatch",
+    "pages/suggestionAndRecording/suggestionAndRecording",
+    "pages/referenceVideo/referenceVideo",
+    "pages/manualLogin/manualLogin",
+    "pages/addCgi/addCgi"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "斗英语",
+    "navigationBarTextStyle":"black"
+  }
+}

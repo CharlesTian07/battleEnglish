@@ -1,0 +1,139 @@
+.recordingOptions {
+  width: 100%;
+  background: #EFEFEF;
+}
+
+.unreadBtn,.readBtn{
+  display: inline-block;
+  width: 50%;  
+  color: #666;
+  background: white;
+  border-radius: 0;
+}
+
+.unreadBtn::after,.readBtn::after{
+  border-radius: 0; 
+  border: none; 
+}
+
+.addClass::after{
+  border-bottom: 20rpx solid red;
+}
+
+.swiper{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* top: 120rpx; */
+}
+
+.unreadRecordingDetails,.readRecordingDetails{
+  width: 100%;
+  /* background: rgba(	255,250,205,0.1); */
+  /* background: rgba(34,139,34,0.2);	 */
+  position: absolute;
+  overflow: hidden;
+}
+
+.isWinBg{
+  background: rgba(255,0,0,0.2);
+}
+
+.isLoseBg{
+  /* background: rgba(255,0,0,0.2); */
+  background: rgba(169,169,169,0.5);
+}
+
+.unreadRecordingDetails{
+  top: 0;
+  left: 0;
+}
+
+.readRecordingDetails{
+  top: 0;
+  left: 100%;
+}
+
+.readRecordingDetailsView,.unreadRecordingDetailsView{
+  padding: 1% 0;
+  border-bottom: 20rpx solid white; 
+  position: relative;
+}
+
+.challengeResultText{
+  color: red; 
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+  font-weight: bold;
+}
+
+.challengeResultTextColor{
+  color: rgb(169,169,169);
+}
+
+.idiom{
+  margin-top: 20rpx;
+  font-weight: bold;
+}
+
+.idiom,.enTitle{
+  width: 90%;
+  text-align: center;
+  padding: 1% 5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resultBetweenUsers{
+  margin: 20rpx 0;
+}
+
+.myResult,.competitorResult{
+  border: 1rpx solid blanchedalmond;
+}
+
+.userinfo-avatar,.competitor-avatar{
+  vertical-align: middle;
+}
+
+.competitor-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+} 
+
+.competitor-nickname {
+  font-size: 32rpx;
+  background: white;
+}
+
+.recordDate{
+  color: #999;
+  font-size: 28rpx;
+}
+
+.redirect{
+  width: 80rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -50rpx;
+  right: 10rpx;
+}
+
+.arrowRightImg{
+  width: 80rpx;
+  height: 100rpx;
+}
+
+.nodataShowImg{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -100px;
+}

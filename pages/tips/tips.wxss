@@ -1,0 +1,41 @@
+page {
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.textTips {
+  width: 80%;
+  padding: 0 10%;
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.shareRechargeGifts{
+  color: red;
+  font-size: 50rpx;
+}
+
+.btnArea {
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 100rpx;
+}
+
+.textTips text {
+  height: 400rpx;
+  line-height: 80rpx;
+}
+
+.btnArea button {
+  width: 40%;
+  padding: 0 5%;
+  margin: 0 5%;
+  color: #fff;
+  display: inline-block;
+}
+
+.sendGifts {
+  margin-left: 10%;
+}

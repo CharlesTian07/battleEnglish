@@ -1,0 +1,70 @@
+<image src='../image/nodata.png' hidden='{{unreadChallengeRecorders == ""? false : true}}' class='nodataShowImg'></image>
+<view class='container' hidden='{{unreadChallengeRecorders == ""? true : false}}'>
+  <view class="recordingOptions">
+    <button class="unreadBtn {{clicked?'':'addClass'}}" bindtap="unreadRecording" style="color:{{unreadBtnColor}}">未读记录</button>
+    <button class="readBtn {{clicked?'addClass':''}}" bindtap="readRecording" style="color:{{readBtnColor}}">已读记录</button>
+  </view>
+
+  <view class='swiper' animation='{{recordingAnimation}}'>
+    <view class='unreadRecordingDetails' hidden='{{unreadRecordingHidden}}'>
+      <view wx:for='{{unreadChallengeRecorders}}' wx:key='{{index}}' wx:for-index='index' wx:for-item='unreadRecording' class='unreadRecordingDetailsView {{unreadRecording.isWin == 1 ? "isWinBg":"isLoseBg"}}'>
+        <view class='challengeResultText {{unreadRecording.isWin == 1 ? "":"challengeResultTextColor"}}'>{{unreadRecording.isWin == 1 ? "胜利":"失败"}}</view>
+        <view class='idiom'>{{unreadRecording.title}}</view>
+        <view class='enTitle'>{{unreadRecording.enTitle}}</view>
+        <view class='resultBetweenUsers' style='display: flex;flex-direction: row'>
+          <view class='myResult' style='flex: 1;width: 100%;'>
+            <view>
+              <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"
+        ></image>
+              <text class='myScore'>{{unreadRecording.score+unreadRecording.accuracy}}分</text>
+            </view>
+            <view class='userinfo-nickname'>{{userInfo.nickName}}</view>
+          </view>
+          <view class='competitorResult' style='flex: 1;width: 100%;'>
+            <view>
+              <text class='competitorScore'>{{unreadRecording.competitor.score+unreadRecording.competitor.accuracy}}分</text>
+              <image class="competitor-avatar" src="{{competitor.avatarUrl}}" background-size="cover"
+        ></image>
+            </view>
+            <view class='competitor-nickname'>{{competitor.nickName}}</view>
+          </view>
+        </view>
+        <view class='recordDate'>{{unreadRecording.created_at}}</view>
+        <view class='redirect' bindtap='goToChallengeDetails'>
+          <image class='arrowRightImg' src='../image/arrow-right.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='readRecordingDetails' hidden='{{readRecordingHidden}}'>
+      <view wx:for='{{readRecording}}' wx:key='{{index}}' wx:for-index='index' wx:for-item='readRecording' class='readRecordingDetailsView {{readRecording.isWin == 1 ? "isWinBg":"isLoseBg"}}'>
+        <view class='challengeResultText {{readRecording.isWin == 1 ? "":"challengeResultTextColor"}}'>{{readRecording.isWin == 1 ? "胜利":"失败"}}</view>
+        <view class='idiom'>{{readRecording.title}}</view>
+        <view class='enTitle'>{{readRecording.enTitle}}</view>
+        <view class='resultBetweenUsers' style='display: flex;flex-direction: row'>
+          <view class='myResult' style='flex: 1;width: 100%;'>
+            <view>
+              <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"
+        ></image>
+              <text class='myScore'>{{readRecording.score + readRecording.accuracy}}分</text>
+            </view>
+            <view class='userinfo-nickname'>{{userInfo.nickName}}</view>
+          </view>
+          <view class='competitorResult' style='flex: 1;width: 100%;'>
+            <view>
+              <text class='competitorScore'>{{readRecording.competitor.score+readRecording.competitor.accuracy}}分</text>
+              <image class="competitor-avatar" src="{{competitor.avatarUrl}}" background-size="cover"
+        ></image>
+            </view>
+            <view class='competitor-nickname'>{{competitor.nickName}}</view>
+          </view>
+        </view>
+        <view class='recordDate'>{{readRecording.created_at}}</view>
+        <view class='redirect' bindtap='goToChallengeDetails'>
+          <image class='arrowRightImg' src='../image/arrow-right.png'></image>
+        </view>
+      </view>        
+    </view>
+  </view>
+</view>
+  

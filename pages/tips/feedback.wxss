@@ -1,0 +1,77 @@
+page{
+  background-color:#F5F5F5;
+}
+
+.htmlBody{
+  margin: 0px;
+  padding: 0px;
+  font-size: 28rpx;
+  /* width:100%; */
+  min-width: 620rpx;
+  height: 100%;
+  min-height: 1120rpx;
+  line-height: 48rpx;
+  letter-spacing: 2rpx;
+} 
+
+.contain{
+  padding: 40rpx 30rpx;
+  margin: 0rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.content{
+  margin: 28rpx auto;
+  padding: 28rpx;
+  width: 94%;
+  height: 600rpx;
+  background-color: #ffffff;
+  /* box-shadow: 2px 0px 1px #CCCCCC ,-2px 0px 1px #CCCCCC ,0px -2px 1px #CCCCCC,0px 2px 1px #CCCCCC; */
+  box-shadow: 4rpx 4rpx 2rpx #CCCCCC inset;
+  color: gray;
+}
+
+.contactMethod{
+  display: inline-flex;
+  align-items: center;
+  height: 100rpx;
+  margin: 0rpx;
+  margin-top: 30rpx;
+  padding: 0rpx;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contactMethod text,.contactMethod input{
+  height: 80rpx;
+  margin: 0rpx;
+}
+
+.contactMethod text{
+  width: 150rpx;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contactMethod input{
+  width: 73%;
+  min-width: 424rpx;
+  background-color: white;
+  margin-left: -8rpx;
+  padding-left: 8rpx;
+  box-shadow: -4rpx 0rpx 2rpx #CCCCCC , 0rpx -4rpx 2rpx #CCCCCC;  
+  color: gray;
+  overflow: hidden;
+}
+
+button{
+  margin-top: 40rpx;
+  width: 100%;
+  color: #ffffff;
+}
+button::after{
+  border-color: rgba(153,153,153,0.2);
+}
+
+

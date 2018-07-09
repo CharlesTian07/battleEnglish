@@ -1,0 +1,17 @@
+<view class="container">
+  <view class='textTips'>
+    <text>恭喜您当天的任务已完成！\n如果您对自己充满信心\n</text>
+    <text class='shareRechargeGifts'>分享到群或好友\n充值VIP\n给内容贡献者送礼\n</text>
+    <text>均可获得学习机会\n你对我们的学习内容满意吗？\n您宝贵的意见就是我们前行的动力</text>
+  </view>
+  <view class='btnArea' style='display: flex;flex-direction: column;'>
+    <view class='shareAndGiftsBtn' style='flex: 1;width: 100%'>
+      <button type='warn' class='sendGifts' bindtap='sendGifts'>送礼</button>
+      <button type='primary' class='share' open-type="share">分享</button>
+    </view>
+    <view class='rechargeAndFeedbackBtn' style='flex: 1;width: 100%;margin-top: 50rpx;'>
+      <button type='warn' class='recharge' bindtap='recharge'>充值</button>
+      <button type='primary' class='feedback' bindtap='feedback'>反馈</button>
+    </view>
+  </view>
+</view>

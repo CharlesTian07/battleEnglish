@@ -1,0 +1,50 @@
+<!-- index.wxml-->
+<view class="container">
+    <!-- 挑战记录的文字提示组件 -->
+    <view class='textHintView' bindtap='checkChallengeRecord' hidden='{{logged ? false : true}}'>
+      <text class='textHint'>有<text class='challengerNum'> {{challengerNum}} </text>人挑战了您，{{challengeHint}}</text>
+      <image class='directionImage' src='../image/arrow.png'></image>
+    </view>
+
+    <!-- 用户头像和昵称 -->
+    <view class="userinfo">
+      <!-- 这里只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+      <!-- <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+      <open-data type="userNickName" class="userinfo-nickname"></open-data> -->
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- 需要使用 button 来授权登录 -->
+      <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+      <view wx:else>请升级微信版本</view> -->
+    </view> 
+
+    <!--  选择单人训练或者组队抢答 -->
+    <view class='selectionTraining'>
+      <view class='singleTraining' style='flex: 1;width: 100%;' bindtap='goToSingleTraining'>
+        <image class='singleTrainningImg' src='../image/singleTraining.jpg'></image>
+        <text class='text'>单人训练</text> 
+      </view>
+      <view class='randomMatch' style='flex: 1;width: 100%;' bindtap='goToRandomMatch'>
+        <image class='randomMatchImg' src='../image/randomMatch.jpg'></image>
+        <text class='text'>随机匹配</text>
+      </view>
+    </view>
+
+    <!--  选择组队竞赛或者其他，这个其他是作为以后预备的空间 -->
+    <view class='additionalItems'>
+      <view class='teamReplies' style='flex: 1;width: 100%;' bindtap='goToTeamReplies'>
+        <image class='teamRepliesImg' src='../image/teamReplies.jpg'></image>
+        <text class='text'>组队竞赛</text>
+      </view>
+      <view class='sendGifts' style='flex: 1;width: 100%;' bindtap='goToSendGifts'>
+        <image class='sendGiftsImg' src='../image/sendGifts.jpg'></image>
+        <text class='text'>精品送礼</text>
+      </view> 
+    </view>
+
+    <!--  提意见和录音的入口 -->
+    <view class='suggestion' bindtap='goToSuggestionAndRecording'>
+      <image class='editIcon' src='../image/editIcon.png'></image>
+      <text class='suggestionText'>提供学习内容或学习读音</text>
+    </view>
+</view>

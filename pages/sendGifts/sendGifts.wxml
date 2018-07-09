@@ -1,0 +1,45 @@
+<view class='container'>
+
+  <!--显示用户头像及昵称，和用户具体贡献内容数据  -->
+  <view class='contributerInfo'>
+    <image class='contributer-avatar' src='../index/user-unlogin.png'></image>
+    <text>nickname</text>
+    <!--用户具体贡献内容数据，用了绝对定位  -->
+    <view class='contirbuterContent'>
+      <text>贡献了</text>
+      <text class='contributeVideoNum'>{{contributeVideoNum}}</text>
+      <text>个内容视频</text>
+    </view>
+  </view>
+
+  <view class='contributionTips'>
+    请选择您要送礼物的内容（可滑动选择）：
+  </view>
+
+  <!--贡献者打赏的具体内容及视频  -->
+  <!-- tip: 请勿在 scroll-view 中使用 textarea、map、canvas、video 组件 -->
+  <!-- scroll-into-view,值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素 -->
+  <view class='videoList'>
+     <scroll-view scroll-y style="height: 600rpx;"> 
+      <view class='videoContent {{videoId.id == currentId ? "addClass":""}}' id='{{index+1}}' wx:for='{{videoId}}' wx:for-index="index" wx:key="videoId" wx:for-item='videoId' bindtap='selectVideo' data-videoId="{{videoId.id}}">
+        <text class='title'>{{title}}</text>
+         <image class='relativeVideo' src='{{videoUrl}}'></image> 
+      </view>
+     </scroll-view> 
+  </view>
+  
+  <!-- 礼物选择区域 -->
+  <view class='giftBlock' bindtap='chooseGifts'>
+    <view class='differentGifts'>
+      <view class='item' id='bubble'>泡泡</view>
+      <view class='item' id='balloon'>气球</view>
+      <view class='item' id='flower'>鲜花</view>
+      <view class='item' id='car'>汽车</view>
+      <view class='item' id='rocket'>火箭</view>
+      <view class='item' id='plane'>飞机</view>
+      <view class='item' id='ship'>轮船</view>
+      <view class='item' id='star'>星星</view>
+    </view>
+  </view>
+
+</view>

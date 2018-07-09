@@ -1,0 +1,32 @@
+<view class='container'>
+   <view class='answerReocrdList'>  
+    <view class='idiom'>{{idiomInfo.title}}</view>
+    <view class='enTitle'>{{idiomInfo.enTitle}}</view>
+    <view class='scoreDetails' style='display: flex;flex-direction: row;'>
+      <view class='referenceVideoView' style='flex: 1;width: 100%;'>
+        <image class='referenceVideo' src='{{idiomInfo.video.videoCoverUrl}}'></image>
+        <image class='playImg' src='../image/play.png' bindtap='goToPlayVideo'></image>
+      </view>
+      <view class='details' style='flex: 1;width: 100%;'>
+        <view class='costTime'>答题耗时：{{costTime}} s</view>
+        <view class='answerScore'>答题得分：{{score}} 分</view>
+        <view class='voiceScore'>
+          <text>发音得分：{{accuracy/2}} 分</text>
+        </view>
+        <view class='totalScore'>总\r\t\r\t\r\t\r\t\r\t\r\t分：<text style='color: red;'>{{totalScore}}</text> 分</view>
+        <view class='playAudioImgVIew'>
+          <text class='Text'>您的发音：</text>
+          <image bindtap='playAudio' animation='{{playAudioAnimation}}' class='userAudioImg' src='../image/audioPlayIcon.png'></image>
+        </view>
+        <view class='playAudioImgVIew'>
+          <text class='Text'>Lily\r\t发音：</text>
+          <image bindtap='playAudio' animation='{{playAudioAnimation}}' class='userAudioImg' src='../image/audioPlayIcon.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='recordDate'>{{updated_at}}</view>
+    <view class='inviteChallenge'>
+      <button open-type='share' class='inviteChallengeBtn'>邀请挑战</button>
+    </view>
+   </view> 
+</view>

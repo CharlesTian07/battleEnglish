@@ -1,0 +1,77 @@
+page {
+  background: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.mineInfo {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 20rpx 0;
+  text-align: center;
+}
+
+.userinfo {
+  /* 注意这里应用了全局样式，在app.wxss中可查看 */
+  margin-bottom: 40rpx;
+} 
+
+.winningRate{ 
+  /* 如果给其一个固定的宽度，会在数据大时或者在某个移动设备上会掉落下来 */
+  /* width: 200rpx; */
+  height: 140rpx;
+  line-height: 140rpx;
+  font-size: 32rpx;
+  text-align: center;
+  position: absolute;
+  right: 50rpx;  
+} 
+
+.answerRecord,.challengeRecord{
+  width: 90%;
+  padding: 0 5%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: white;
+}
+
+.challengeRecord{
+  margin-top: 40rpx;
+}
+
+.answerRecordText,.challengeRecordText,.mineInfoText{
+  text-align: left;
+  display: inline-block; 
+}
+
+.directionImage,.mineInfoImg{
+  display: inline-block; 
+}
+
+.directionImage{
+  width: 30rpx;
+  height: 40rpx;
+  margin: 40rpx 0 0;
+  float: right;
+}
+
+.answerRecordImg,.challengeRecordImg{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.mineInfoImg{
+  width: 75rpx;
+  height: 75rpx;
+  margin: 10rpx 10rpx;
+  vertical-align: middle;
+}
+
+.answerRecordImg,.challengeRecordImg{
+  margin: 30rpx 10rpx;
+  float: left;
+}
+
+

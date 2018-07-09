@@ -1,0 +1,57 @@
+page{
+  background-color:#F5F5F5;
+}
+
+.container{
+  width: 100%;
+  padding: 5%;
+}
+
+.seviceSelection{
+  width: 100%;
+}
+
+.one_month_service_selection,.three_months_service_selection,.one_year_service_selection{
+  line-height: 80rpx;
+  text-align: center;
+  margin: 0rpx 1%;
+  position: relative;
+}
+
+.one_month_img,.three_months_img,.one_year_img{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 4rpx;
+  bottom: 4rpx;
+}
+ 
+.one_month_is_checked,.three_months_is_checked,.one_year_is_checked{
+  border: 2rpx solid #608908;
+  color: #608908;
+  background: #FFF;
+}
+
+.normal{
+  border: 1rpx solid #CCC;
+  color: #333;
+  background: #F0F1EC;
+}
+
+.payFee{
+  width: 90%;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 40rpx 0;
+}
+
+.rechargeView{
+  width: 100%;
+  padding: 0 5%;
+}
+
+.immediateRecharge{
+  width: 100%;
+  font-size: 36rpx;
+  color: white;
+}

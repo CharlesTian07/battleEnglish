@@ -1,0 +1,92 @@
+.container{
+  width: 100%;
+}
+
+.answerReocrdList{
+  width: 80%;
+  padding: 2% 5%;
+  margin: 10rpx 0;
+  border: 1rpx solid black;
+  border-radius: 20rpx;
+  background: rgba(238,153,34,0.1); 
+  position: relative;
+}
+
+.idiom{
+  font-weight: bold;
+}
+
+.idiom,.enTitle{
+  text-align: center;
+  padding: 1% 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scoreDetails{
+  text-align: left;
+  padding: 1% 0;
+}
+
+.details{
+  line-height: 30px;
+  font-size: 30rpx; 
+}
+
+.referenceVideoView,.details{
+  margin-top: 30rpx;
+}
+
+.referenceVideoView{
+  position: relative;
+  text-align: center;
+}
+
+.referenceVideo{
+  width: 240rpx;
+  height: 400rpx; 
+}
+
+.recordDate{
+  text-align: center;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.playAudioImgVIew{
+  margin: 20rpx 0;
+}
+
+.userAudioImg{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.inviteChallenge{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+
+.inviteChallengeBtn{
+  color: blue;
+  background: none;
+}
+
+.inviteChallengeBtn::after{
+  border: none;
+}
+
+.playImg{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.6;
+} 

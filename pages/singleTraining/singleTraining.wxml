@@ -1,0 +1,27 @@
+<view  class="container">
+  <!-- <view class='studyItem'>
+    <text class='EnglishVersion'>学习项目：</text>
+  </view> -->
+  <view class='countDown'><text class='countDownNum'>{{countDownNum}}</text>s</view>
+  
+  <view class='EnIdioms'><text>{{enTitle}}</text></view>
+
+  <view class='textInfo' hidden='{{textInfoHidden}}'>
+    <view class='firstHint'><text>提示一(百度翻译)：</text></view>
+    <view class='hintcontent'><text class='translatedByTool'>{{translatedByTool}}</text></view>
+  </view>
+
+  <view class='imageInfo' hidden='{{imageInfoHidden}}'>
+    <view class='secondHint'><text>提示二：</text></view>
+    <view class='relativeImageView'><image class='relativeImage' src='{{imageUrl}}' bindtap='showBigImage'></image></view>
+  </view>
+  
+  <view class='userAnswer'>
+    <!-- <text class='userAnswerTitle'>答案：</text> -->
+    <input class='userAnswerContent' placeholder='请输入您的答案...' name='userAnswerContent' bindinput='getUserAnswer'>{{userAnswer}}</input>
+  </view>
+
+  <view class='submit'>
+    <button class='submitBtn' type='primary' bindtap='goToResult'>提交</button>
+  </view>
+</view>

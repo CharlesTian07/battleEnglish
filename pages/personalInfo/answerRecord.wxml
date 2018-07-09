@@ -1,0 +1,28 @@
+<view class='container'>
+   <view class='answerReocrdList' wx:for='{{answerRecorders}}' wx:for-index='index' wx:for-item='items' wx:key='{{index}}'>  
+    <view class='idiom'>{{items.title}}</view>
+    <view class='enTitle'>{{items.enTitle}}</view>
+    <view class='scoreDetails' style='display: flex;flex-direction: column;'>
+      <view class='costTime' style='flex: 1;width: 100%;'>答题耗时：{{items.costTime}} s</view>
+      <view class='answerScore' style='flex: 1;width: 100%;'>答题得分：{{items.score}} 分</view>
+      <view class='voiceScore' style='flex: 1;width: 100%;'>
+        <text>发音得分：{{items.accuracy/2}} 分</text>
+        <!-- <image bindtap='playAudio' data-type='{{items.idiomId}}' animation='{{playAudioAnimation}}' class='userAudioImg' src='../image/audioPlayIcon.png'></image> -->
+      </view>
+      <view class='recordDateAndTotalScore' style='flex: 1;width: 100%;'>
+        <view class='recordDate'>{{items.updated_at}}</view>
+        <view class='totalScore'>总分：<text style='color: red;'>{{items.accuracy/2+items.score}}</text> 分</view>
+      </view>
+    </view>
+    <view class='redirect' data-type='{{items}}' bindtap='goToAnswerDetails' id='{{items.idiomId}}'>
+      <image class='arrowRightImg' src='../image/arrow-right.png'></image>
+    </view>
+    <view class='inviteChallenge'>
+      <button open-type='share' class='inviteChallengeBtn'>邀请挑战</button>
+    </view>
+   </view>
+
+   <view class='nodataView' hidden='{{nodataViewHidden}}'>
+     <image src='../image/nodata.png' class='imageBg'></image>
+   </view> 
+</view>

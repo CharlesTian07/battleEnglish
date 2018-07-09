@@ -1,0 +1,11 @@
+page{
+  background: rgba(255,248,220,0.5)
+}
+
+.title{
+  margin: 40rpx 0;
+}
+
+.referenceVideo{
+  width: 90%;
+}

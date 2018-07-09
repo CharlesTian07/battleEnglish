@@ -1,0 +1,156 @@
+page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background: #EFEFEF; */
+}
+
+.studyItem{
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 20rpx;
+}
+
+.answerInfo{
+  width: 84%;
+  padding: 2% 3%;
+  margin-bottom: 20rpx;
+  background: rgba(191,168,168,0.2);
+}
+
+.rightAnswer{
+  margin-bottom: 20rpx;
+}
+
+.EnIdioms{
+  width: 88%;
+  text-align: center;
+  color: white;
+  margin: 40rpx 0 20rpx 0;
+  padding: 20rpx 1%;
+  border-radius: 10rpx;
+  font-size: 48rpx;
+  background: rgba(238,153,34,1);
+}
+
+.answerTime{
+  text-align: left;
+}
+
+.rightAnswerContent{
+  color: red;
+}
+
+.costTime,.score,.remainRecordTime{
+  /* font-size: 40rpx; */
+   color: red; 
+}
+
+.recording{
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.userAudio,.videoInfo{
+  width: 90%;
+  text-align: center;
+}
+
+.recording{
+  width: 90%;
+}
+
+.recordingSection{
+  position: relative;
+}
+
+.pronounceScore{
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.videoInfo{
+  position: relative;
+  text-align: center;
+  background: #333;
+  border: 1rpx solid black;
+}
+
+.recording text,.userAudio text{
+  font-size: 30rpx;
+}
+
+.relativeVideo{
+  width: 240rpx;
+  vertical-align: middle; 
+}
+
+.playImg{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.6;
+} 
+
+.recordingIcon{
+  width: 80px;
+  height: 80px;
+  margin: 20rpx 0 80rpx 0;
+  border-radius: 50%;
+}
+
+.userAudioImg{
+  width: 40px;
+  height: 40px;
+  margin: 40rpx 0;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.recordingTips{
+  display: block;
+  padding: 20rpx 0;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  color: black;
+  background: rgba(250,235,215,0.8);
+}
+
+.submit{
+  margin-top: 50rpx;
+}
+
+.challengeAndNextItem{
+  width: 90%;
+  padding: 0 5%;
+  margin: 50rpx 0 30rpx 0;
+}
+
+.challenge,.nextItem{
+  width: 47%;
+  display: inline-block;
+  color: white;
+}
+
+.challenge{
+  margin-right: 6%;
+}
+
+.index{
+  padding: 20rpx 40rpx;
+  text-align: left;
+  background: rgba(	255,250,205,0.8);
+  border: 2rpx solid rgba(238,153,34,1);
+  border-radius: 50rpx;
+  box-shadow: 0rpx 0rpx 5rpx #666;
+  position: fixed;
+  bottom: 40rpx;
+  right: -30rpx;
+}

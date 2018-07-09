@@ -1,0 +1,16 @@
+page{
+  background:	rgba(255,250,205,0.2)
+}
+
+.userinfo-avatar{
+  margin: 200rpx 0 40rpx 0;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 120rpx;
+}
+
+.loginBtn{
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 80rpx;
+}

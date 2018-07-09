@@ -1,0 +1,30 @@
+<view class="container">
+  <view class='seviceSelection' style='display: flex;flex-direction: row' bindtap='seviceSelection'>
+    <view class='one_month_service_selection' style='flex: 1;width: 100%;' id='0'>
+      <view class="{{vipType == 0?'one_month_is_checked':'normal'}}" id='0'>
+        <text id='0'>{{vipTypes[0].vipDuration}}天\n{{vipTypes[0].price}}元</text>
+        <image src='../image/icon-check.jpg' class='one_month_img' style="{{one_month_img}}"></image> 
+      </view>
+    </view>
+
+    <view class='three_months_service_selection' style='flex: 1;width: 100%;' id='1'>
+      <view class="{{vipType == 1?'three_months_is_checked':'normal'}}" id='1'>
+        <text id='1'>{{vipTypes[1].vipDuration}}天\n{{vipTypes[1].price}}元</text>
+        <image src='../image/icon-check.jpg' class='three_months_img' style="{{three_months_img}}"></image> 
+      </view>
+    </view>
+
+    <view class='one_year_service_selection' style='flex: 1;width: 100%;' id='2'>
+      <view class="{{vipType == 2?'one_year_is_checked':'normal'}}" id='2'>
+        <text id='3'>{{vipTypes[2].vipDuration}}天\n{{vipTypes[2].price}}元</text>
+        <image src='../image/icon-check.jpg' class='one_year_img' style="{{one_year_img}}"></image> 
+      </view>
+    </view>
+  </view>
+
+  <view class="payFee">
+    <text>您需支付：{{totalFee}}元</text>
+  </view>
+
+  <view class='rechargeView'><button type='warn' bindtap="immediateRecharge" class="immediateRecharge">立即充值</button></view>
+</view>

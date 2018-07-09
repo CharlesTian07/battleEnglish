@@ -1,0 +1,5 @@
+<view class='container'>
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+    <button bindtap="login" class='loginBtn' type='primary'>授权登录</button> 
+</view>

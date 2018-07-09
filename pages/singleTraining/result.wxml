@@ -1,0 +1,43 @@
+<view  class="container">
+  <view class='EnIdioms'><text>{{enTitle}}</text></view>
+
+  <view class='answerInfo'>
+    <view class='rightAnswer'>正确答案：
+      <text class='rightAnswerContent'>{{rightAnswerContent}}</text>
+    </view>
+    <view class='answerTime'>
+      <text class='isCorrectHint' hidden='{{isCorrect==1 ? false:true}}'>恭喜答对了！耗时<text class='costTime'>{{costTime}}</text>s。</text>
+      <text class='isNotCorrectHint' hidden='{{isCorrect==1 ? true:false}}'>对不起，您没能在限定时间内完成答题！</text>
+      <text>答题得分:<text class='score'> {{score}}</text> 分</text>
+      <text hidden='{{scoreResultHidden}}'>，发音得分:<text class='score'>{{pronounceScore}}</text>分，总分:<text class='score'>{{score+pronounceScore}}</text>分</text>
+    </view>
+  </view>
+  
+  <view class='recording' hidden='{{recordingViewHidden}}'>
+    <view bindtap='recordingProgress' class='recordingSection'>
+      <image animation='{{recordAnimation}}' class='recordingIcon' src='{{recordingImgUrl}}'></image>
+      <view class='pronounceScore' hidden='{{getScoreAlready ? false : true}}'>发音得分：<text class='score'>{{pronounceScore}}</text>分，满分50分。若对测评结果不满意，可点击图标再次录音。</view>
+    </view>
+    <text class='recordingTips'>{{tipsForUserRecord}}\n录音最长时间为10s，您还可录制<text class='remainRecordTime'>{{remainRecordTime}}</text>s</text>
+    <view class='submit' hidden='{{submitViewHidden}}'><button type='primary' class='submitBtn' bindtap='submitAudio'>提交</button></view>
+  </view>
+
+  <view class='userAudio' style='flex: 1;width: 100%' hidden='{{userAudioViewHidden}}'>
+    <text>正确率：{{pronunciationAccuracy}}%，点击图标可播放读音...  </text>
+    <image bindtap='playAudio' animation='{{playAudioAnimation}}' class='userAudioImg' src='../image/audioPlayIcon.png'></image>
+  </view>
+
+  <view class='videoInfo' hidden='{{videoInfoViewHidden}}'>
+    <image class='relativeVideo' mode='widthFix' src='{{videoCoverUrl}}'></image>
+    <image class='playImg' src='../image/play.png' bindtap='goToPlayVideo'></image>
+  </view> 
+
+  <view class='challengeAndNextItem' hidden='{{btnViewHidden}}'>
+    <view>
+      <button class='challenge' type='warn' open-type="share">发起挑战</button>
+      <button class='nextItem' bindtap='nextItem' type='primary'>下一关</button>
+    </view>
+  </view>
+
+  <view class='index' bindtap='goToIndex'>首页</view> 
+</view>

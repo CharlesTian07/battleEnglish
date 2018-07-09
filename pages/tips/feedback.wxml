@@ -1,0 +1,11 @@
+<view class="htmlBody">
+  <view class="contain">
+    <rich-text type='node' name='p'>亲爱的用户，您有什么问题和意见，都可以在这里填写,感谢您对我们产品的支持。</rich-text>
+    <textarea value="{{content}}" class="content" bindinput="textareaInput" placeholder='内容限300字以内' maxlength='300'/>
+    <view class="contactMethod">
+      <text style='color:gray;'>电话号码：</text>
+      <input style="{{inputFocusStyle}}" placeholder="选填" value="{{phone}}" bindinput="phoneInput"  bindblur="loseFocus"/>
+    </view>
+    <button hover-class="btnClick" type='primary' bindtap="clickSubmit">提交</button>
+  </view>
+</view>

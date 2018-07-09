@@ -1,0 +1,4 @@
+<view class='container'>
+  <view class='title'>{{title}}</view>
+  <video class='referenceVideo' src='{{referenceVideoUrl}}' initial-time='0' controls='true'></video>
+</view>

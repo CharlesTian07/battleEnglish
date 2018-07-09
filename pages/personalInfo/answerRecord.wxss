@@ -1,0 +1,99 @@
+.container{
+  width: 100%;
+}
+
+.nodataView{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.imageBg{
+  width: 200px;
+  height: 200px;
+}
+
+.answerReocrdList{
+  width: 80%;
+  padding: 2% 5%;
+  margin: 10rpx 0;
+  border: 1rpx solid black;
+  border-radius: 20rpx;
+  background: rgba(238,153,34,0.1); 
+  position: relative;
+}
+
+.idiom{
+  font-weight: bold;
+}
+
+.idiom,.enTitle{
+  text-align: center;
+  padding: 1% 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scoreDetails{
+  text-align: left;
+  padding: 1% 0;
+  line-height: 30px; 
+}
+
+.recordDate,.totalScore{
+  width: 50%;
+  float: left;
+}
+
+.recordDate{
+  /* width: 60%; */
+  text-align: left;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.totalScore{
+  /* width: 40%; */
+  text-align: right;
+}
+
+.userAudioImg{
+  width: 30px;
+  height: 30px;
+  margin-left: 50rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.redirect{
+  width: 80rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -50rpx;
+  right: 10rpx;
+}
+
+.arrowRightImg{
+  width: 80rpx;
+  height: 100rpx;
+}
+
+.inviteChallenge{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+
+.inviteChallengeBtn{
+  color: blue;
+  background: none;
+}
+
+.inviteChallengeBtn::after{
+  border: none;
+}
