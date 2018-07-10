@@ -4,7 +4,7 @@ var config = require('./config')
 
 App({
     globalConfig: {
-      pre_api_url: 'https://www.encryption.funwall.cn/branch/server/',
+      pre_api_url: 'your database url',
     },
 
     globalData: {
